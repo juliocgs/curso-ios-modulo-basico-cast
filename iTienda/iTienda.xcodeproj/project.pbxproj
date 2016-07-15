@@ -1,0 +1,712 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		69130BFD1D34667400E9C457 /* TNDCustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 69130BFB1D34667400E9C457 /* TNDCustomTableViewCell.m */; };
+		69130BFE1D34667400E9C457 /* TNDCustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69130BFC1D34667400E9C457 /* TNDCustomTableViewCell.xib */; };
+		69130C021D347B3300E9C457 /* TNDProductListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69130C001D347B3300E9C457 /* TNDProductListViewController.m */; };
+		69130C031D347B3300E9C457 /* TNDProductListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69130C011D347B3300E9C457 /* TNDProductListViewController.xib */; };
+		69130C061D34887C00E9C457 /* TNDProductService.m in Sources */ = {isa = PBXBuildFile; fileRef = 69130C051D34887C00E9C457 /* TNDProductService.m */; };
+		69130C0C1D34959E00E9C457 /* NSNumber+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 69130C0B1D34959E00E9C457 /* NSNumber+Utils.m */; };
+		69130C0F1D349A3100E9C457 /* TNDProductJSONParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 69130C0E1D349A3100E9C457 /* TNDProductJSONParser.m */; };
+		69130C191D34AB3400E9C457 /* UITableView+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 69130C181D34AB3400E9C457 /* UITableView+Utils.m */; };
+		698D8A3C1D32BE1E002E5010 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 698D8A1B1D32BE1E002E5010 /* AppDelegate.m */; };
+		698D8A3D1D32BE1E002E5010 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 698D8A1C1D32BE1E002E5010 /* main.m */; };
+		698D8A3E1D32BE1E002E5010 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 698D8A201D32BE1E002E5010 /* Assets.xcassets */; };
+		698D8A3F1D32BE1E002E5010 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 698D8A231D32BE1E002E5010 /* LaunchScreen.storyboard */; };
+		698D8A401D32BE1E002E5010 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 698D8A251D32BE1E002E5010 /* Main.storyboard */; };
+		698D8A411D32BE1E002E5010 /* NSString+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 698D8A2B1D32BE1E002E5010 /* NSString+Utils.m */; };
+		698D8A421D32BE1E002E5010 /* UIViewController+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 698D8A2D1D32BE1E002E5010 /* UIViewController+Utils.m */; };
+		698D8A461D32BE27002E5010 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 698D8A451D32BE27002E5010 /* Default-568h@2x.png */; };
+		698D8A491D32BEC7002E5010 /* iTiendaModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 698D8A471D32BEC7002E5010 /* iTiendaModel.xcdatamodeld */; };
+		698D8A4F1D32BF3B002E5010 /* TNDDownloadImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 698D8A4D1D32BF3B002E5010 /* TNDDownloadImageView.m */; };
+		699EE0C11D35E09D008A166C /* TNDProductDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 699EE0BF1D35E09D008A166C /* TNDProductDetailsViewController.m */; };
+		699EE0C21D35E09D008A166C /* TNDProductDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 699EE0C01D35E09D008A166C /* TNDProductDetailsViewController.xib */; };
+		69C3C40A1D32C90D00603F44 /* TNDCategory+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 69C3C4071D32C90D00603F44 /* TNDCategory+CoreDataProperties.m */; };
+		69C3C40B1D32C90D00603F44 /* TNDCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 69C3C4091D32C90D00603F44 /* TNDCategory.m */; };
+		69C3C4101D32C93600603F44 /* TNDProduct+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 69C3C40D1D32C93600603F44 /* TNDProduct+CoreDataProperties.m */; };
+		69C3C4111D32C93600603F44 /* TNDProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = 69C3C40F1D32C93600603F44 /* TNDProduct.m */; };
+		69C3C4151D32D3DE00603F44 /* TNDContextHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 69C3C4141D32D3DE00603F44 /* TNDContextHelper.m */; };
+		69C3C4191D32D4B800603F44 /* TNDEntityHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 69C3C4181D32D4B800603F44 /* TNDEntityHelper.m */; };
+		69C3C4221D32DD7000603F44 /* TNDBaseMervadoLivreService.m in Sources */ = {isa = PBXBuildFile; fileRef = 69C3C4211D32DD7000603F44 /* TNDBaseMervadoLivreService.m */; };
+		69C3C4251D32DD9C00603F44 /* TNDCategoryService.m in Sources */ = {isa = PBXBuildFile; fileRef = 69C3C4241D32DD9C00603F44 /* TNDCategoryService.m */; };
+		69C3C4281D32E21D00603F44 /* TNDCategoryJSONParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 69C3C4271D32E21D00603F44 /* TNDCategoryJSONParser.m */; };
+		69D3F11F1D37113200135058 /* TNDBaseDBCoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D3F11E1D37113200135058 /* TNDBaseDBCoreData.m */; };
+		69D3F1221D37163400135058 /* TNDCategoryDBCoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D3F1211D37163400135058 /* TNDCategoryDBCoreData.m */; };
+		69D3F1251D372BB100135058 /* TNDProductDBCoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D3F1241D372BB100135058 /* TNDProductDBCoreData.m */; };
+		69F85C6A1D3354910057781E /* TNDCategoriesListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F85C661D3354910057781E /* TNDCategoriesListViewController.m */; };
+		69F85C6B1D3354910057781E /* TNDCategoriesListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69F85C671D3354910057781E /* TNDCategoriesListViewController.xib */; };
+		69F85C6F1D3355480057781E /* TNDAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F85C6D1D3355480057781E /* TNDAboutViewController.m */; };
+		69F85C701D3355480057781E /* TNDAboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69F85C6E1D3355480057781E /* TNDAboutViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		69130BFA1D34667400E9C457 /* TNDCustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNDCustomTableViewCell.h; sourceTree = "<group>"; };
+		69130BFB1D34667400E9C457 /* TNDCustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNDCustomTableViewCell.m; sourceTree = "<group>"; };
+		69130BFC1D34667400E9C457 /* TNDCustomTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TNDCustomTableViewCell.xib; sourceTree = "<group>"; };
+		69130BFF1D347B3300E9C457 /* TNDProductListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNDProductListViewController.h; sourceTree = "<group>"; };
+		69130C001D347B3300E9C457 /* TNDProductListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNDProductListViewController.m; sourceTree = "<group>"; };
+		69130C011D347B3300E9C457 /* TNDProductListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TNDProductListViewController.xib; sourceTree = "<group>"; };
+		69130C041D34887C00E9C457 /* TNDProductService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNDProductService.h; sourceTree = "<group>"; };
+		69130C051D34887C00E9C457 /* TNDProductService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNDProductService.m; sourceTree = "<group>"; };
+		69130C0A1D34959E00E9C457 /* NSNumber+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+Utils.h"; sourceTree = "<group>"; };
+		69130C0B1D34959E00E9C457 /* NSNumber+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+Utils.m"; sourceTree = "<group>"; };
+		69130C0D1D349A3100E9C457 /* TNDProductJSONParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNDProductJSONParser.h; sourceTree = "<group>"; };
+		69130C0E1D349A3100E9C457 /* TNDProductJSONParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNDProductJSONParser.m; sourceTree = "<group>"; };
+		69130C171D34AB3400E9C457 /* UITableView+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+Utils.h"; sourceTree = "<group>"; };
+		69130C181D34AB3400E9C457 /* UITableView+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Utils.m"; sourceTree = "<group>"; };
+		696118311D32929B0034E547 /* iTienda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTienda.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		698D8A181D32BE1E002E5010 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		698D8A1A1D32BE1E002E5010 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		698D8A1B1D32BE1E002E5010 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		698D8A1C1D32BE1E002E5010 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		698D8A201D32BE1E002E5010 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		698D8A241D32BE1E002E5010 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		698D8A261D32BE1E002E5010 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		698D8A2A1D32BE1E002E5010 /* NSString+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Utils.h"; sourceTree = "<group>"; };
+		698D8A2B1D32BE1E002E5010 /* NSString+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Utils.m"; sourceTree = "<group>"; };
+		698D8A2C1D32BE1E002E5010 /* UIViewController+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Utils.h"; sourceTree = "<group>"; };
+		698D8A2D1D32BE1E002E5010 /* UIViewController+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Utils.m"; sourceTree = "<group>"; };
+		698D8A451D32BE27002E5010 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		698D8A481D32BEC7002E5010 /* iTiendaModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iTiendaModel.xcdatamodel; sourceTree = "<group>"; };
+		698D8A4C1D32BF3B002E5010 /* TNDDownloadImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNDDownloadImageView.h; sourceTree = "<group>"; };
+		698D8A4D1D32BF3B002E5010 /* TNDDownloadImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNDDownloadImageView.m; sourceTree = "<group>"; };
+		699EE0BE1D35E09D008A166C /* TNDProductDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNDProductDetailsViewController.h; sourceTree = "<group>"; };
+		699EE0BF1D35E09D008A166C /* TNDProductDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNDProductDetailsViewController.m; sourceTree = "<group>"; };
+		699EE0C01D35E09D008A166C /* TNDProductDetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TNDProductDetailsViewController.xib; sourceTree = "<group>"; };
+		69C3C4061D32C90D00603F44 /* TNDCategory+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TNDCategory+CoreDataProperties.h"; sourceTree = "<group>"; };
+		69C3C4071D32C90D00603F44 /* TNDCategory+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TNDCategory+CoreDataProperties.m"; sourceTree = "<group>"; };
+		69C3C4081D32C90D00603F44 /* TNDCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNDCategory.h; sourceTree = "<group>"; };
+		69C3C4091D32C90D00603F44 /* TNDCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNDCategory.m; sourceTree = "<group>"; };
+		69C3C40C1D32C93600603F44 /* TNDProduct+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TNDProduct+CoreDataProperties.h"; sourceTree = "<group>"; };
+		69C3C40D1D32C93600603F44 /* TNDProduct+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TNDProduct+CoreDataProperties.m"; sourceTree = "<group>"; };
+		69C3C40E1D32C93600603F44 /* TNDProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNDProduct.h; sourceTree = "<group>"; };
+		69C3C40F1D32C93600603F44 /* TNDProduct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNDProduct.m; sourceTree = "<group>"; };
+		69C3C4131D32D3DE00603F44 /* TNDContextHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNDContextHelper.h; sourceTree = "<group>"; };
+		69C3C4141D32D3DE00603F44 /* TNDContextHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNDContextHelper.m; sourceTree = "<group>"; };
+		69C3C4171D32D4B800603F44 /* TNDEntityHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNDEntityHelper.h; sourceTree = "<group>"; };
+		69C3C4181D32D4B800603F44 /* TNDEntityHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNDEntityHelper.m; sourceTree = "<group>"; };
+		69C3C4201D32DD7000603F44 /* TNDBaseMervadoLivreService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNDBaseMervadoLivreService.h; sourceTree = "<group>"; };
+		69C3C4211D32DD7000603F44 /* TNDBaseMervadoLivreService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNDBaseMervadoLivreService.m; sourceTree = "<group>"; };
+		69C3C4231D32DD9C00603F44 /* TNDCategoryService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNDCategoryService.h; sourceTree = "<group>"; };
+		69C3C4241D32DD9C00603F44 /* TNDCategoryService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNDCategoryService.m; sourceTree = "<group>"; };
+		69C3C4261D32E21D00603F44 /* TNDCategoryJSONParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNDCategoryJSONParser.h; sourceTree = "<group>"; };
+		69C3C4271D32E21D00603F44 /* TNDCategoryJSONParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNDCategoryJSONParser.m; sourceTree = "<group>"; };
+		69D3F11D1D37113200135058 /* TNDBaseDBCoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNDBaseDBCoreData.h; sourceTree = "<group>"; };
+		69D3F11E1D37113200135058 /* TNDBaseDBCoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNDBaseDBCoreData.m; sourceTree = "<group>"; };
+		69D3F1201D37163400135058 /* TNDCategoryDBCoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNDCategoryDBCoreData.h; sourceTree = "<group>"; };
+		69D3F1211D37163400135058 /* TNDCategoryDBCoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNDCategoryDBCoreData.m; sourceTree = "<group>"; };
+		69D3F1231D372BB100135058 /* TNDProductDBCoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNDProductDBCoreData.h; sourceTree = "<group>"; };
+		69D3F1241D372BB100135058 /* TNDProductDBCoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNDProductDBCoreData.m; sourceTree = "<group>"; };
+		69F85C651D3354910057781E /* TNDCategoriesListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNDCategoriesListViewController.h; sourceTree = "<group>"; };
+		69F85C661D3354910057781E /* TNDCategoriesListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNDCategoriesListViewController.m; sourceTree = "<group>"; };
+		69F85C671D3354910057781E /* TNDCategoriesListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TNDCategoriesListViewController.xib; sourceTree = "<group>"; };
+		69F85C6C1D3355480057781E /* TNDAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNDAboutViewController.h; sourceTree = "<group>"; };
+		69F85C6D1D3355480057781E /* TNDAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNDAboutViewController.m; sourceTree = "<group>"; };
+		69F85C6E1D3355480057781E /* TNDAboutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TNDAboutViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6961182E1D32929B0034E547 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		69130BF91D34661B00E9C457 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				69130BFA1D34667400E9C457 /* TNDCustomTableViewCell.h */,
+				69130BFB1D34667400E9C457 /* TNDCustomTableViewCell.m */,
+				69130BFC1D34667400E9C457 /* TNDCustomTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		696118281D32929B0034E547 = {
+			isa = PBXGroup;
+			children = (
+				698D8A451D32BE27002E5010 /* Default-568h@2x.png */,
+				696118331D32929B0034E547 /* iTienda */,
+				696118321D32929B0034E547 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		696118321D32929B0034E547 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				696118311D32929B0034E547 /* iTienda.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		696118331D32929B0034E547 /* iTienda */ = {
+			isa = PBXGroup;
+			children = (
+				698D8A171D32BE1E002E5010 /* Config */,
+				698D8A191D32BE1E002E5010 /* Misc */,
+				698D8A1D1D32BE1E002E5010 /* Resources */,
+				698D8A281D32BE1E002E5010 /* Sources */,
+			);
+			path = iTienda;
+			sourceTree = "<group>";
+		};
+		698D8A171D32BE1E002E5010 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				698D8A181D32BE1E002E5010 /* Info.plist */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		698D8A191D32BE1E002E5010 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				698D8A1A1D32BE1E002E5010 /* AppDelegate.h */,
+				698D8A1B1D32BE1E002E5010 /* AppDelegate.m */,
+				698D8A1C1D32BE1E002E5010 /* main.m */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
+		698D8A1D1D32BE1E002E5010 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				698D8A1E1D32BE1E002E5010 /* html */,
+				698D8A1F1D32BE1E002E5010 /* images */,
+				698D8A211D32BE1E002E5010 /* json */,
+				698D8A221D32BE1E002E5010 /* UserInterface */,
+				698D8A271D32BE1E002E5010 /* xml */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		698D8A1E1D32BE1E002E5010 /* html */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = html;
+			sourceTree = "<group>";
+		};
+		698D8A1F1D32BE1E002E5010 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				698D8A201D32BE1E002E5010 /* Assets.xcassets */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		698D8A211D32BE1E002E5010 /* json */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = json;
+			sourceTree = "<group>";
+		};
+		698D8A221D32BE1E002E5010 /* UserInterface */ = {
+			isa = PBXGroup;
+			children = (
+				698D8A231D32BE1E002E5010 /* LaunchScreen.storyboard */,
+				698D8A251D32BE1E002E5010 /* Main.storyboard */,
+			);
+			path = UserInterface;
+			sourceTree = "<group>";
+		};
+		698D8A271D32BE1E002E5010 /* xml */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = xml;
+			sourceTree = "<group>";
+		};
+		698D8A281D32BE1E002E5010 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				698D8A291D32BE1E002E5010 /* Categories */,
+				698D8A2E1D32BE1E002E5010 /* Controllers */,
+				698D8A321D32BE1E002E5010 /* CoreData */,
+				698D8A351D32BE1E002E5010 /* Helpers */,
+				698D8A391D32BE1E002E5010 /* Models */,
+				698D8A3A1D32BE1E002E5010 /* Services */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		698D8A291D32BE1E002E5010 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				698D8A2A1D32BE1E002E5010 /* NSString+Utils.h */,
+				698D8A2B1D32BE1E002E5010 /* NSString+Utils.m */,
+				698D8A2C1D32BE1E002E5010 /* UIViewController+Utils.h */,
+				698D8A2D1D32BE1E002E5010 /* UIViewController+Utils.m */,
+				69130C0A1D34959E00E9C457 /* NSNumber+Utils.h */,
+				69130C0B1D34959E00E9C457 /* NSNumber+Utils.m */,
+				69130C171D34AB3400E9C457 /* UITableView+Utils.h */,
+				69130C181D34AB3400E9C457 /* UITableView+Utils.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		698D8A2E1D32BE1E002E5010 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				698D8A4A1D32BF3B002E5010 /* About */,
+				698D8A4B1D32BF3B002E5010 /* Common */,
+				698D8A4E1D32BF3B002E5010 /* Products */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		698D8A321D32BE1E002E5010 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				698D8A331D32BE1E002E5010 /* Entity */,
+				698D8A341D32BE1E002E5010 /* Manager */,
+				698D8A471D32BEC7002E5010 /* iTiendaModel.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		698D8A331D32BE1E002E5010 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				69C3C4061D32C90D00603F44 /* TNDCategory+CoreDataProperties.h */,
+				69C3C4071D32C90D00603F44 /* TNDCategory+CoreDataProperties.m */,
+				69C3C4081D32C90D00603F44 /* TNDCategory.h */,
+				69C3C4091D32C90D00603F44 /* TNDCategory.m */,
+				69C3C40C1D32C93600603F44 /* TNDProduct+CoreDataProperties.h */,
+				69C3C40D1D32C93600603F44 /* TNDProduct+CoreDataProperties.m */,
+				69C3C40E1D32C93600603F44 /* TNDProduct.h */,
+				69C3C40F1D32C93600603F44 /* TNDProduct.m */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		698D8A341D32BE1E002E5010 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				69D3F11C1D3710F300135058 /* Base */,
+				69D3F1201D37163400135058 /* TNDCategoryDBCoreData.h */,
+				69D3F1211D37163400135058 /* TNDCategoryDBCoreData.m */,
+				69D3F1231D372BB100135058 /* TNDProductDBCoreData.h */,
+				69D3F1241D372BB100135058 /* TNDProductDBCoreData.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		698D8A351D32BE1E002E5010 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				69C3C4121D32D3BC00603F44 /* Context */,
+				69C3C4161D32D4A600603F44 /* Entity */,
+				698D8A361D32BE1E002E5010 /* JSON */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		698D8A361D32BE1E002E5010 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				69C3C4261D32E21D00603F44 /* TNDCategoryJSONParser.h */,
+				69C3C4271D32E21D00603F44 /* TNDCategoryJSONParser.m */,
+				69130C0D1D349A3100E9C457 /* TNDProductJSONParser.h */,
+				69130C0E1D349A3100E9C457 /* TNDProductJSONParser.m */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		698D8A391D32BE1E002E5010 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		698D8A3A1D32BE1E002E5010 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				69C3C41F1D32DD7000603F44 /* MercadoLivreService */,
+				69C3C4231D32DD9C00603F44 /* TNDCategoryService.h */,
+				69C3C4241D32DD9C00603F44 /* TNDCategoryService.m */,
+				69130C041D34887C00E9C457 /* TNDProductService.h */,
+				69130C051D34887C00E9C457 /* TNDProductService.m */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		698D8A4A1D32BF3B002E5010 /* About */ = {
+			isa = PBXGroup;
+			children = (
+				69F85C6C1D3355480057781E /* TNDAboutViewController.h */,
+				69F85C6D1D3355480057781E /* TNDAboutViewController.m */,
+				69F85C6E1D3355480057781E /* TNDAboutViewController.xib */,
+			);
+			path = About;
+			sourceTree = "<group>";
+		};
+		698D8A4B1D32BF3B002E5010 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				69130BF91D34661B00E9C457 /* Cells */,
+				698D8A4C1D32BF3B002E5010 /* TNDDownloadImageView.h */,
+				698D8A4D1D32BF3B002E5010 /* TNDDownloadImageView.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		698D8A4E1D32BF3B002E5010 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				69F85C641D3354910057781E /* CategoryList */,
+				69F85C681D3354910057781E /* ProductDetails */,
+				69F85C691D3354910057781E /* ProductList */,
+			);
+			path = Products;
+			sourceTree = "<group>";
+		};
+		69C3C4121D32D3BC00603F44 /* Context */ = {
+			isa = PBXGroup;
+			children = (
+				69C3C4131D32D3DE00603F44 /* TNDContextHelper.h */,
+				69C3C4141D32D3DE00603F44 /* TNDContextHelper.m */,
+			);
+			path = Context;
+			sourceTree = "<group>";
+		};
+		69C3C4161D32D4A600603F44 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				69C3C4171D32D4B800603F44 /* TNDEntityHelper.h */,
+				69C3C4181D32D4B800603F44 /* TNDEntityHelper.m */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		69C3C41F1D32DD7000603F44 /* MercadoLivreService */ = {
+			isa = PBXGroup;
+			children = (
+				69C3C4201D32DD7000603F44 /* TNDBaseMervadoLivreService.h */,
+				69C3C4211D32DD7000603F44 /* TNDBaseMervadoLivreService.m */,
+			);
+			path = MercadoLivreService;
+			sourceTree = "<group>";
+		};
+		69D3F11C1D3710F300135058 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				69D3F11D1D37113200135058 /* TNDBaseDBCoreData.h */,
+				69D3F11E1D37113200135058 /* TNDBaseDBCoreData.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		69F85C641D3354910057781E /* CategoryList */ = {
+			isa = PBXGroup;
+			children = (
+				69F85C651D3354910057781E /* TNDCategoriesListViewController.h */,
+				69F85C661D3354910057781E /* TNDCategoriesListViewController.m */,
+				69F85C671D3354910057781E /* TNDCategoriesListViewController.xib */,
+			);
+			path = CategoryList;
+			sourceTree = "<group>";
+		};
+		69F85C681D3354910057781E /* ProductDetails */ = {
+			isa = PBXGroup;
+			children = (
+				699EE0BE1D35E09D008A166C /* TNDProductDetailsViewController.h */,
+				699EE0BF1D35E09D008A166C /* TNDProductDetailsViewController.m */,
+				699EE0C01D35E09D008A166C /* TNDProductDetailsViewController.xib */,
+			);
+			path = ProductDetails;
+			sourceTree = "<group>";
+		};
+		69F85C691D3354910057781E /* ProductList */ = {
+			isa = PBXGroup;
+			children = (
+				69130BFF1D347B3300E9C457 /* TNDProductListViewController.h */,
+				69130C001D347B3300E9C457 /* TNDProductListViewController.m */,
+				69130C011D347B3300E9C457 /* TNDProductListViewController.xib */,
+			);
+			path = ProductList;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		696118301D32929B0034E547 /* iTienda */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6961184B1D32929C0034E547 /* Build configuration list for PBXNativeTarget "iTienda" */;
+			buildPhases = (
+				6961182D1D32929B0034E547 /* Sources */,
+				6961182E1D32929B0034E547 /* Frameworks */,
+				6961182F1D32929B0034E547 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iTienda;
+			productName = iTienda;
+			productReference = 696118311D32929B0034E547 /* iTienda.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		696118291D32929B0034E547 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TND;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Cast Group";
+				TargetAttributes = {
+					696118301D32929B0034E547 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 6961182C1D32929B0034E547 /* Build configuration list for PBXProject "iTienda" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 696118281D32929B0034E547;
+			productRefGroup = 696118321D32929B0034E547 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				696118301D32929B0034E547 /* iTienda */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6961182F1D32929B0034E547 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				698D8A3F1D32BE1E002E5010 /* LaunchScreen.storyboard in Resources */,
+				69F85C6B1D3354910057781E /* TNDCategoriesListViewController.xib in Resources */,
+				698D8A3E1D32BE1E002E5010 /* Assets.xcassets in Resources */,
+				69F85C701D3355480057781E /* TNDAboutViewController.xib in Resources */,
+				698D8A461D32BE27002E5010 /* Default-568h@2x.png in Resources */,
+				69130BFE1D34667400E9C457 /* TNDCustomTableViewCell.xib in Resources */,
+				69130C031D347B3300E9C457 /* TNDProductListViewController.xib in Resources */,
+				699EE0C21D35E09D008A166C /* TNDProductDetailsViewController.xib in Resources */,
+				698D8A401D32BE1E002E5010 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6961182D1D32929B0034E547 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69D3F1251D372BB100135058 /* TNDProductDBCoreData.m in Sources */,
+				69C3C40A1D32C90D00603F44 /* TNDCategory+CoreDataProperties.m in Sources */,
+				69130C021D347B3300E9C457 /* TNDProductListViewController.m in Sources */,
+				69130C191D34AB3400E9C457 /* UITableView+Utils.m in Sources */,
+				698D8A421D32BE1E002E5010 /* UIViewController+Utils.m in Sources */,
+				69130C0C1D34959E00E9C457 /* NSNumber+Utils.m in Sources */,
+				69C3C40B1D32C90D00603F44 /* TNDCategory.m in Sources */,
+				69130C0F1D349A3100E9C457 /* TNDProductJSONParser.m in Sources */,
+				69C3C4281D32E21D00603F44 /* TNDCategoryJSONParser.m in Sources */,
+				699EE0C11D35E09D008A166C /* TNDProductDetailsViewController.m in Sources */,
+				69C3C4251D32DD9C00603F44 /* TNDCategoryService.m in Sources */,
+				69130BFD1D34667400E9C457 /* TNDCustomTableViewCell.m in Sources */,
+				69C3C4101D32C93600603F44 /* TNDProduct+CoreDataProperties.m in Sources */,
+				698D8A3D1D32BE1E002E5010 /* main.m in Sources */,
+				69C3C4111D32C93600603F44 /* TNDProduct.m in Sources */,
+				69C3C4191D32D4B800603F44 /* TNDEntityHelper.m in Sources */,
+				69D3F1221D37163400135058 /* TNDCategoryDBCoreData.m in Sources */,
+				69F85C6A1D3354910057781E /* TNDCategoriesListViewController.m in Sources */,
+				69F85C6F1D3355480057781E /* TNDAboutViewController.m in Sources */,
+				698D8A4F1D32BF3B002E5010 /* TNDDownloadImageView.m in Sources */,
+				69C3C4151D32D3DE00603F44 /* TNDContextHelper.m in Sources */,
+				698D8A411D32BE1E002E5010 /* NSString+Utils.m in Sources */,
+				698D8A3C1D32BE1E002E5010 /* AppDelegate.m in Sources */,
+				69D3F11F1D37113200135058 /* TNDBaseDBCoreData.m in Sources */,
+				69C3C4221D32DD7000603F44 /* TNDBaseMervadoLivreService.m in Sources */,
+				69130C061D34887C00E9C457 /* TNDProductService.m in Sources */,
+				698D8A491D32BEC7002E5010 /* iTiendaModel.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		698D8A231D32BE1E002E5010 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				698D8A241D32BE1E002E5010 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		698D8A251D32BE1E002E5010 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				698D8A261D32BE1E002E5010 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		696118491D32929C0034E547 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6961184A1D32929C0034E547 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6961184C1D32929C0034E547 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "$(SRCROOT)/iTienda/Config/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.cast.iTienda;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6961184D1D32929C0034E547 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "$(SRCROOT)/iTienda/Config/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.cast.iTienda;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6961182C1D32929B0034E547 /* Build configuration list for PBXProject "iTienda" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				696118491D32929C0034E547 /* Debug */,
+				6961184A1D32929C0034E547 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6961184B1D32929C0034E547 /* Build configuration list for PBXNativeTarget "iTienda" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6961184C1D32929C0034E547 /* Debug */,
+				6961184D1D32929C0034E547 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		698D8A471D32BEC7002E5010 /* iTiendaModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				698D8A481D32BEC7002E5010 /* iTiendaModel.xcdatamodel */,
+			);
+			currentVersion = 698D8A481D32BEC7002E5010 /* iTiendaModel.xcdatamodel */;
+			path = iTiendaModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 696118291D32929B0034E547 /* Project object */;
+}

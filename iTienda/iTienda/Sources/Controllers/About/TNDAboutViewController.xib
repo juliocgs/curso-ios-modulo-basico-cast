@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TNDAboutViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iTienda" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NEm-aA-idv">
+                    <rect key="frame" x="134" y="82" width="107" height="40"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7a0-VF-bPs">
+                    <rect key="frame" x="0.0" y="130" width="375" height="106"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="106" id="vmu-Wq-MU3"/>
+                    </constraints>
+                    <string key="text">Aplicativo criado para fins acadêmicos do PIC da Cast Group. Esse aplicativo consome a API do Mercado Livre para listagem de produtos por categoria.</string>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cast_logo" translatesAutoresizingMaskIntoConstraints="NO" id="iNj-Uc-ExP">
+                    <rect key="frame" x="87" y="264" width="200" height="200"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="7a0-VF-bPs" firstAttribute="top" secondItem="NEm-aA-idv" secondAttribute="bottom" constant="8" id="78e-dd-Cwf"/>
+                <constraint firstItem="NEm-aA-idv" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="82" id="OW3-0j-zBh"/>
+                <constraint firstAttribute="trailing" secondItem="7a0-VF-bPs" secondAttribute="trailing" id="d0w-F0-GfN"/>
+                <constraint firstItem="NEm-aA-idv" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="e1r-nM-zxX"/>
+                <constraint firstItem="7a0-VF-bPs" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="euH-n0-IwY"/>
+                <constraint firstItem="iNj-Uc-ExP" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="pVY-ww-QG3"/>
+                <constraint firstItem="iNj-Uc-ExP" firstAttribute="top" secondItem="7a0-VF-bPs" secondAttribute="bottom" constant="28" id="xZN-3q-aax"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="417.5" y="338.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="cast_logo" width="200" height="200"/>
+    </resources>
+</document>
